@@ -17,7 +17,8 @@ class GameObject{
         GameObject();
         GameObject(Component _components[]);
         ~GameObject();
-        Component * components;
+        Component **components; //an array of pointers to components
         void AddComponent(Component c);
+        void RemoveComponent(Component c);
 
 };
